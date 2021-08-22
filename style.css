@@ -1,0 +1,36 @@
+.movie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.movie:hover .watch {
+    opacity: 1;
+}
+
+.watch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all ease 1s;
+}
+
+.watch-modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.431);
+}
+
+.watch-modal-content {
+    height: 80%;
+    width: 80%;
+    background-color: white;
+    margin: 5% auto;
+}
